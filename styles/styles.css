@@ -1,0 +1,81 @@
+/* Colors */
+:root {
+    --light-color: white;
+    --dark-color: black;
+}
+
+/* Main */
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: inherit;
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#mapMain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mapImage {
+    position: absolute;
+    height: 100vh;
+    z-index: -10;
+}
+
+#mapCanvas, #dataMapCanvas {
+
+}
+
+.center {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mapCanvas {
+    z-index: 10;
+}
+
+#dataMapCanvas {
+    z-index: -20;
+}
+
+button {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#xHTML {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+#yHTML {
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
